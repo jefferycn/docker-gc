@@ -1,0 +1,13 @@
+spotify/docker-gc:latest
+nate/dockviz:latest
+node:9.4.0
+node:10.15.3
+node:latest
+ubuntu:16.04
+ubuntu:14.04
+nginx:latest
+memcached:latest
+website_web:latest
+mysql:5.7
+busybox:latest
+nginx:latest

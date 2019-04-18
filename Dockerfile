@@ -1,6 +1,6 @@
 FROM gliderlabs/alpine:3.2
 
-ENV DOCKER_VERSION 17.09.0-ce
+ENV DOCKER_VERSION 18.09.1
 
 # We get curl so that we can avoid a separate ADD to fetch the Docker binary, and then we'll remove it
 RUN apk --update add bash curl \
@@ -15,6 +15,7 @@ RUN apk --update add bash curl \
   && rm -rf /var/cache/apk/*
 
 COPY ./docker-gc /docker-gc
+COPY ./docker-gc-exclude /etc/docker-gc-exclude
 
 VOLUME /var/lib/docker-gc
 
